@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+
+#num {
+	display:none;
+}
+/*鼠标移在按钮上，按钮显示绿色。*/
+#search_button:hover,#ask_button:hover,#first_page:hover,#discovery:hover,#topic:hover,.middle_left_button:hover {
+	background-color:#2EC074;	
+}
+/*----------页面中央的主要界面样式---------*/
+
+#middle {
+	position:relative;
+	margin-top:100px;
+}
+/*页面的左半部分*/
+#middle_left{
+	margin-left:180px;
+	margin-top:30px;
+	width:980px;
+	border:1px solid #6495ED;
+	border-radius:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.discovery_block {
+	margin-left:30px;
+	width:920px;
+	margin-top:20px;
+	border-bottom:1px solid gray;
+	display:block;
+	margin-bottom:20px;
+}
+.ask_text,.ask_time,.discovery_newest_answer {
+	font-size:small;
+	color:gray;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.title_span {
+	color:#6495ED;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	margin-bottom:5px;
+}
+.question_link:link {
+	color:#000;
+	text-decoration:none;
+}
+.question_link:visited {
+	color:#000;	
+}
+.question_link:hover {
+	text-decoration: none;
+    color:indianred;
+}
+/*底部版权标记*/
+#bottom {
+	text-align:center;
+  	border-top:callapsed 1px;
+	color:#333;	
+	line-height:100px;
+	height:100px;
+	bottom:0;
+	clear:both;
+}
+#get_more {
+	background-color:#6495ED;
+	border:0;
+	width:800px;
+	height:30px;
+	margin-left:270px;
+    color:white;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+
+.inner_answer_pic {
+	max-width:300px;
+	max-width:600px;
+}

@@ -1,0 +1,219 @@
+@CHARSET "UTF-8";
+
+/*鼠标移在按钮上，按钮显示绿色。*/
+.focus_button:hover,#search_button:hover,#ask_button:hover,#first_page:hover,#discovery:hover,#topic:hover,.middle_left_button:hover {
+	background-color:#2EC074;	
+}
+
+/*----------页面中央的主要界面样式---------*/
+
+#middle {
+	position:relative;
+	margin-top:100px;
+}
+/*页面的左半部分*/
+#middle_left{
+    float:left;
+	margin-left:80px;
+	margin-top:30px;
+}
+#middle_right {
+	margin-left:980px;	
+	border-left:solid #6495ED 1px;
+	margin-right:50px;
+	
+}
+
+
+/*我的提问 按钮*/
+#my_question {
+	margin-left:0px;
+	margin-right:0;
+}
+/*我的回答按钮*/
+#my_answer {
+	margin-left:-5px;
+}
+.middle_left_button {
+	background-color:#ddd;
+	border:0;
+	border-radius:7px 7px 0px 0px;
+	height:40px;
+	width:100px;
+	color:white;
+	background-color:#ddd;
+}
+.middle_left_button.active {
+	background-color:#6495ED;
+}
+
+.middle_left_pane {
+	width:800px;
+	margin-left:0px;
+	border-radius:0px 7px 7px 7px;
+	border:1px solid #6495ED;
+	padding-bottom:20px;
+	display:none;	
+}
+.middle_left_pane.active {
+	display:block;
+}
+
+.user_question {
+    margin-left:30px;
+	color:#666;	
+	font-weight:bold;
+	width:750px;
+}
+.question_link:link {
+	color:#000;
+	text-decoration:none;
+}
+.question_link:visited {
+	color:#000;	
+}
+.question_link:hover {
+	text-decoration: underline;
+    color:indianred;
+}
+.my_question_link:link {
+	color:#000;
+	text-decoration:none;
+}
+.my_question_link:visited {
+	color:#000;	
+}
+.my_question_link:hover {
+	text-decoration: underline;
+    color:indianred;
+}
+.item_title {
+	width:750px;
+	font-weight:bold;	
+}
+.item_answer {
+	width:750px;	
+}
+
+
+.answer_item {
+	margin-left:30px;
+	margin-top:20px;
+	border-bottom:solid 1px #ddd;
+	width:750px;
+}
+.timer  {
+	color:gray;
+	font-size: small;
+}
+/*中部页面右半部分，用户显示用户主要信息*/
+
+/*用于显示用户的大头像*/
+#user_pic_big {
+	width:80px;
+	height:80px;	
+	margin-left:80px;
+	margin-top:40px;
+	margin-bottom:20px;
+	border-radius:5px;
+}
+#middle_user_name {
+	margin-left:80px;
+	width:100px;
+	text-align:center;
+	font-weight:bold;
+	color:	#6495ED;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-overflow:ellipsis; 
+    white-space:nowrap; 
+    overflow:hidden;
+	
+}
+#middle_user_sign_div {
+	width:260px;
+	margin-bottom:10px;
+	
+}
+#middle_user_sign {
+	margin:0 auto;	
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	color:gray;
+}
+
+#user_info {
+	margin-left:50px;
+	margin-bottom:30px;
+	margin-right
+}
+/*显示数量*/
+#num {
+	margin-left:auto;
+	margin-right:auto;	
+}
+#user_focus_num_tip {
+	text-align:center;
+	margin-right:50px;	
+}
+#user_focus_num_outer {
+	text-align:center;
+	margin-left:7px;
+	margin-right:65px;
+}
+#middle_right_top {
+	width:260px;
+	margin-left:20px;	
+	border-bottom:solid #6495ED 1px;	
+}
+#middle_right_middle{
+	height:120px;
+	width:260px;
+	margin-left:20px;	
+}
+#recent_focus,#recent_focus_by {
+	line-height:60px;
+    text-decoration: none;
+    color: #000;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.small_pic {
+	width:30px;
+	height:30px;
+	border-radius:3px;
+}	
+
+
+
+
+#from_id,#to_id {
+	display:none;
+}
+.focus_button {
+	width:100px;
+	height:40px;
+	border-radius:5px;
+	background-color:#6495ED;
+	border:0;
+	margin-left:70px;
+	margin-top:30px;
+	color:white;
+}
+
+/*底部版权标记*/
+#bottom {
+	text-align:center;
+  	border-top:callapsed 1px;
+	color:#333;	
+	line-height:100px;
+	height:100px;
+	bottom:0;
+	clear:both;
+}
+
+
+
+.inner_answer_pic {
+	max-width:300px;
+	max-width:600px;
+}s
+

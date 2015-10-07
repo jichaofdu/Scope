@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+<!---------------------------------------------------------------------------->
+<!---------------------------------用户信息修改专属区---------------------------------->
+
+
+#change_user_info_pane {
+	width:400px;
+	height:500px;
+	display:none;
+	margin-left:400px;
+	top:100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    padding: 30px;
+    font-size: 12px;
+    position: fixed;
+    text-align: center;
+    background: #fff;
+    z-index: 100;		
+}
+.change_div {
+	height:60px;	
+}
+#first_change_div {
+	height:120px;	
+}
+.change_tip {
+	width:150px;
+	float:left;	
+}
+#change_description_text {
+	width:250px;
+	height:80px;	
+}
+#change_password_text,#change_passwordagain_text {
+	width:250px;	
+	height:25px;
+}
+
+#cancel_change_info,#post_change_info,.btn {
+	width:100px;
+	height:30px;
+	border-radius:3px;
+	border:0;
+	background-color:#6495ED;
+	cursor:pointer;	
+	color:white;	
+}
+.btn {
+	margin-top:20px;
+}
+#cancel_change_info:hover,#post_change_info:hover,.btn:hover {
+	background-color:#2EC074;	
+}
+#alert_tip,#change_error_alert {
+	font-size:13px;
+	color:#F00;	
+}
+#change_error_alert_div{
+	display:none;	
+}
+#change_user_info_pane {
+	width:400px;
+	height:500px;
+	display:none;
+	margin-left:400px;
+	top:100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    padding: 30px;
+    font-size: 12px;
+    position: fixed;
+    text-align: center;
+    background: #fff;
+    z-index: 100;		
+}
+
+<!----------------------------------------------------------------------------------->

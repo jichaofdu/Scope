@@ -1,0 +1,78 @@
+数据库地址：
+cd C:\Program Files\MySQL\MySQL Server 5.6\bin
+
+CREATE TABLE message (
+     id INT AUTO_INCREMENT,
+     PRIMARY KEY  (`id`),
+	 username TINYTEXT,
+     content TEXT,
+     time TIMESTAMP(6)
+);
+
+CREATE TABLE user (
+	id INT(10) AUTO_INCREMENT,
+	PRIMARY KEY  (`id`),
+	nickname TINYTEXT,
+	email TINYTEXT,
+	password TINYTEXT,
+	pic_src TINYTEXT,
+	description TINYTEXT,
+    fans INT,
+    focus INT
+);
+
+CREATE TABLE question (
+	id INT(10) AUTO_INCREMENT,
+	PRIMARY KEY  (`id`),
+	asker_id INT(10),
+    title TINYTEXT,
+    content TEXT,
+    numofanswer SMALLINT,
+    latest_change_time DATETIME(6)
+);
+
+CREATE TABLE questionanswer(
+	id INT(10) AUTO_INCREMENT,
+	PRIMARY KEY  (`id`),
+    question_id INT(10),
+    responder_id INT(10),
+    content TEXT,
+    numofcomment SMALLINT,
+	time TIMESTAMP(6)
+);
+
+CREATE TABLE answercomment(
+	id INT(10) AUTO_INCREMENT,
+	PRIMARY KEY  (`id`),
+	questionanswer_id INT(10),
+    responder_id INT(10),
+    content TINYTEXT,
+    time TIMESTAMP(6)
+);
+
+CREATE TABLE message(
+	id INT(10) AUTO_INCREMENT,
+	PRIMARY KEY  (`id`),
+    sender_id INT(10),
+    receiver_id INT(10),
+    content TINYTEXT,
+    send_time TIMESTAMP(6),
+    is_read bool 
+);
+
+CREATE TABLE relation(
+	id INT(10) AUTO_INCREMENT,
+	PRIMARY KEY  (`id`),
+	user_from INT(10),
+    user_to INT(10)
+);	
+
+CREATE TABLE recentlyactiveitem(
+	id INT(10) AUTO_INCREMENT,
+	PRIMARY KEY  (`id`),
+	user_id INT(10),
+    question_id INT(10),
+    questionanswer_id INT(10),
+    time TIMESTAMP(6)
+);
+

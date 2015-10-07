@@ -1,0 +1,223 @@
+@charset "utf-8";
+/*整个html的body部分*/
+
+<!--------------------------用户信息小框专属区---------------------------------->
+<!--------------------------------------------------------------------------->
+
+.user_info_pane {
+	width:250px;
+	height:150px;
+	background-color:#fff;
+	border:1px solid gray;
+}
+.user_pane_top {
+	margin-left:30px;
+	margin-top:10px;
+	margin-bottom:10px;	
+	width:190px;
+}
+.user_info_bottom {
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left：:30px;
+	width:190px;	
+}
+.user_pane_img {
+	float:left;	
+	width:60px;
+	height:60px;
+}
+.user_pane_nickname {
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	font-size:13px;
+	color:#6495ED;
+}
+.user_pane_description {
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	font-size:small;
+	color:gray;
+}
+.user_pane_focus_tip,.user_pane_fans_tip {
+	font-size:12px;	
+}
+<!--------------------------------------------------------------------------->
+
+
+body {
+	position:relative;
+    margin: 0;
+	font-family: Helvetica, arial, "Times New Roman";
+}
+/*网页最上面的一大块*/
+button {
+	cursor: pointer; 	
+}
+
+#top {
+	height:500px;
+    width: 100%;
+	min-width:1280px;
+    top: 0;
+    /**background-color: #7EC0EE;**/
+	background:url(../img/pic_for_index.jpg)
+}
+/*背景图片的信息*/
+#pic_for_index {
+	height:500px;
+	width:100%;		
+}
+/*最上面一块的左半部分*/
+#top #top_left {
+	margin-left:200px;
+	margin-top:200px;
+    float:left;	
+}
+#top #top_left .top_sign {
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	color:white;
+}
+/*这两个是对左半部分标语的设置*/
+#top_sign_one {
+	font-size:50px;	
+}
+#top_sign_two {
+	font-size:20px;	
+	margin-left:30px
+}
+/*最上边一块的右半部分*/
+#top #top_right {
+	float:right;
+	margin-right:200px;
+	margin-top:70px;	
+}
+/*这两块用于设置显示哪一部分*/
+#top #top_right #login_part {
+	display:none;	
+}
+#top #top_right #register_part {
+	display:block;	
+}
+/*设置那一堆组件的信息*/
+.login,.register {
+	display:block;	
+	height:30px;
+	width:200px;
+	border-radius:5px;
+	margin-top:30px;
+	border:0;
+}
+
+/*设置按钮的信息*/
+#login,#register {
+	background-color:#6495ED;
+	color:#fff;	
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+#login:hover,#register:hover {
+	background-color:#2EC074;	
+}
+#register_nickname,#register_mail,#register_password,#register_password_again,#user_name,#user_password {
+	background-color:#FFC;		
+}
+#register_nickname:focus,#register_mail:focus,#register_password:focus,#register_password_again:focus,#user_name:focus,#user_password:focus{
+	background-color:white;	
+}
+/*登录和注册页面的标题栏信息*/
+.login_line,.register_line{
+	display:inline;	
+}
+#login_sign,#register_sign{
+	width:70px;	
+	color:white;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+#to_register,#to_login{
+	margin-left:30px;
+	width:100px;	
+	background-color:transparent;
+	border:0;
+	color:white;
+	text-decoration:bold;
+	font-size:15px;
+	border-radius:5px;
+}
+#password_wrong {
+	display:none;
+	color:#F00;
+}
+#register_error {
+	display:none;
+	color:#F00;
+}
+
+
+/*网页中部样式的显示*/
+#middle {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;	
+	width:1000px;
+	display:block;
+}
+
+.user_img {
+	display:inline;
+	width:100px;
+	height:100px;	
+	margin:20px 30px 20px 30px;
+	border-radius:60px;
+	border:solid #ddd 10px ;
+}
+.user_img:hover {
+	border:solid 10px #6495ED;
+}
+#middle_top {
+	padding:30px;
+	border:1px solid #6495ED;
+	border-radius:20px;
+	margin-bottom:20px;
+}
+.hot_title {
+	padding-bottom:5px;
+	width:500px;
+	border-bottom: 1px solid #ddd;	
+}
+
+#middle_bottom {
+	border:1px solid #6495ED;
+	border-radius:20px;
+	padding:30px;
+	clear:both;	
+}
+#middle .hot_title {
+	font-size:20px;	
+}
+/*设置热门问题的动作*/
+.hot_questions {
+	display:block;
+	line-height:50px;	
+	width:900px;
+	
+}
+
+.hot_link:link {
+	color:gray;
+	text-decoration:none;
+}
+.hot_link:visited {
+	color:gray;	
+}
+.hot_link:hover {
+	text-decoration:underline;
+	color:indianred;
+}
+
+
+#bottom {
+	text-align:center;
+  	border-top:callapsed 1px;
+	color:#333;	
+	line-height:100px;
+	height:100px;
+}

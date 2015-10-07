@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+#middle {
+	position:relative;
+	margin-top:100px;
+	border:1px solid #6495ED;
+	width:820px;
+	border-radius:10px;
+	margin-left:200px;
+}
+.active_answer_title,active_ask_title {
+	color:#6495ED;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.active_answer_content {
+	font-size:12px;
+}
+.active_item_block_ask,.active_item_block_answer {
+	margin-left:50px;
+	width:720px;
+    margin-top:50px;
+    border-bottom:1px solid gray;
+    display:block;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+.active_ask_top_div,.active_ask_middle_div,.active_ask_bottom_div {
+	margin-left:70px;
+}
+.active_answer_top_div,.active_answer_middle_div,.active_answer_bottom_div {
+	margin-left:70px;
+}
+.active_ask_user_img,.active_answer_user_img {
+	width:50px;
+	height:50px;
+	float:left;
+	
+}
+.question_link:link {
+	color:#6495ED;
+	text-decoration:none;
+}
+.question_link:visited {
+	color:#6495ED;	
+}
+.question_link:hover {
+	text-decoration: underline;
+    color:indianred;
+}
+.active_ask_answer_num_tip,.active_ask_time,.active_ask_answer_num_tip,.active_ask_time,.active_answer_nick_tip,.active_ask_nick_tip,.active_answer_time {
+	color:gray;
+	font-size: small;		
+}
+
+/*底部版权标记*/
+#bottom {
+	text-align:center;
+  	border-top:callapsed 1px;
+	color:#333;	
+	line-height:100px;
+	height:100px;
+	bottom:0;
+	clear:both;
+}
